@@ -1,0 +1,7 @@
+{
+  "name": "Yuki Shigemasa",
+  "job": "Student at Kyushu univ.",
+  "position": "Backend engineer",
+  "discription": "ものを作ることが好きで建築学科に入りましたが、\n大学3年の頃に自分のPCの中で色んなものが作れてしまうプログラマーへの関心が強まり、独学開始。\nその後、実際のサービスに関わりたいという思いから、スタートアップでインターンを経験。\n新しいものを開けるときのようなワクワクするプロダクトに関わること・いろんな技術を触りたいということが\n今の一番のモチベーションです。\n好きなことは、アニメ、バイク、美味しいものを食べること。",
+  "skills": ["Python", "PHP", "Javascript", "Laravel", "Vue.js", "React"]
+}
