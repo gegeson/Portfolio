@@ -1,17 +1,20 @@
 import React from "react";
+import { navLinks } from "../config";
 import { Row, Col } from "react-bootstrap";
-import "./Header.css";
+import "./css/Header.css";
 
 export default function Header() {
-  const menuList = ["About me", "Experience", "Products", "Monologue"];
-
   return (
     <Row className="">
-      {menuList.map((menu, i) => (
+      {navLinks.map(({ name, url }, i) => (
         <Col key={i}>
-          <p className="menuNav">
-            <span className="menuNumber">0{i + 1}.</span> {menu}
-          </p>
+          <ol>
+            <li>
+              <a href={url} className="menuNav">
+                {name}
+              </a>
+            </li>
+          </ol>
         </Col>
       ))}
     </Row>
