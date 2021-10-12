@@ -1,39 +1,47 @@
+$text-color1: white;
+
 .App {
   text-align: center;
-  background-color: #21242b;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #21242b;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #0a192e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section {
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0;
+  @media (max-width: 480px) and (min-height: 700px) {
+    padding-bottom: 10vh;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    margin: 0 0 30px 4px;
+    color: $text-color1;
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-weight: 400;
+    @media (max-width: 480px) {
+      margin: 0 0 20px 2px;
+    }
+  }
+  h2 {
+    margin: 0 0 30px 4px;
+    color: $text-color1;
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-weight: 400;
+    @media (max-width: 480px) {
+      margin: 0 0 20px 2px;
+    }
+  }
+  h3 {
+    margin-top: 10px;
+    color: $text-color1;
+    line-height: 0.9;
+  }
+  p {
+    margin: 20px 0 0;
+    max-width: 540px;
+    color: $text-color1;
   }
 }

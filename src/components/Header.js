@@ -5,18 +5,12 @@ import "../css/Header.scss";
 
 export default function Header() {
   return (
-    <Row className="">
+    <ol>
       {navLinks.map(({ name, url }, i) => (
-        <Col key={i}>
-          <ol>
-            <li>
-              <a href={url} className="menuNav">
-                {name}
-              </a>
-            </li>
-          </ol>
-        </Col>
+        <li key={i} className="menuNav">
+          <a href={url}>{name}</a>
+        </li>
       ))}
-    </Row>
+    </ol>
   );
 }

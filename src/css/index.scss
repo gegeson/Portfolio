@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap");
+
 html {
-  background-color: #21242b;
+  background-color: #0a192e;
 }
 body {
   margin: 0;
@@ -8,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 code {
