@@ -1,7 +1,7 @@
 import React from "react";
 import { navLinks } from "../config";
 import { Row, Col } from "react-bootstrap";
-import "./css/Header.css";
+import "../css/Header.scss";
 
 export default function Header() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { socialMedia } from "../config";
 import Icon from "./icons/icon";
-import "./css/Social.scss";
+import "../css/Social.scss";
 
 export default function Social() {
   return (
