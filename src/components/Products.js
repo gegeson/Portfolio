@@ -1,49 +1,33 @@
 import * as React from "react";
+import { products } from "../config";
+
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
-const items = [
-  {
-    title: "Portfolio",
-    discription: "This is my portforio. ",
-    skills: ["Javascript", "React"],
-    code_url: "https://github.com/gegeson/Portfolio",
-  },
-  {
-    title: "Portfolio",
-    discription: "This is my portforio. ",
-    skills: ["Javascript", "React"],
-    code_url: "https://github.com/gegeson/Portfolio",
-  },
-  {
-    title: "Portfolio",
-    discription: "This is my portforio. ",
-    skills: ["Javascript", "React"],
-    code_url: "https://github.com/gegeson/Portfolio",
-  },
-  {
-    title: "Portfolio",
-    discription: "This is my portforio. ",
-    skills: ["Javascript", "React"],
-    code_url: "https://github.com/gegeson/Portfolio",
-  },
-];
-
 const card = ({ title, discription, skills, code_url }) => (
-  <React.Fragment>
+  <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+      component="img"
+      alt="green iguana"
+      height="140"
+      image="src/images/リエラ.jpg"
+    />
     <CardContent>
-      <Typography variant="h5" component="div">
+      <Typography gutterBottom variant="h5" component="div">
         {title}
       </Typography>
-      <Typography variant="body2">{discription}</Typography>
+      <Typography variant="body2" color="text.secondary">
+        {discription}
+      </Typography>
       <Typography sx={{ mb: 1.5 }} color="text.secondary">
         <Stack direction="row" spacing={1}>
           {skills.map((skill, i) => (
@@ -53,9 +37,10 @@ const card = ({ title, discription, skills, code_url }) => (
       </Typography>
     </CardContent>
     <CardActions>
+      <Button size="small">Share</Button>
       <Button size="small">Learn More</Button>
     </CardActions>
-  </React.Fragment>
+  </Card>
 );
 
 export default function OutlinedCard() {
@@ -70,9 +55,9 @@ export default function OutlinedCard() {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {items.map((item, i) => (
+          {products.map((product, i) => (
             <Grid item xs={2} sm={4} md={4} key={i}>
-              <Card variant="outlined">{card(item)}</Card>{" "}
+              <Card variant="outlined">{card(product)}</Card>{" "}
             </Grid>
           ))}
         </Grid>

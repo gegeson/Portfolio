@@ -39,6 +39,57 @@ module.exports = {
     },
   ],
 
+  products: [
+    {
+      title: "Portfolio",
+      discription: "This is my portforio. ",
+      skills: ["Javascript", "React"],
+      code_url: "https://github.com/gegeson/Portfolio",
+    },
+    {
+      title: "Portfolio",
+      discription: "This is my portforio. ",
+      skills: ["Javascript", "React"],
+      code_url: "https://github.com/gegeson/Portfolio",
+    },
+    {
+      title: "Portfolio",
+      discription: "This is my portforio. ",
+      skills: ["Javascript", "React"],
+      code_url: "https://github.com/gegeson/Portfolio",
+    },
+    {
+      title: "Portfolio",
+      discription: "This is my portforio. ",
+      skills: ["Javascript", "React"],
+      code_url: "https://github.com/gegeson/Portfolio",
+    },
+  ],
+
+  experiences: [
+    {
+      title: "生誕！！",
+      time: "1998/05/12",
+    },
+    {
+      title: "私立東明館高等学校（佐賀県）",
+      time: "12014-2017",
+    },
+    {
+      title: "九州大学 工学部 建築学科",
+      time: "2018",
+    },
+    {
+      title: "LINE FUKUOKA Smart City Fukuoka Meetup#5 join!",
+      time: "2021/03",
+    },
+    {
+      title:
+        "株式会社Oh my teeth 長期インターン join! PHP, Laravel,Javascript, Vue.js",
+      time: "2021/03-現在",
+    },
+  ],
+
   colors: {
     green: "#64ffda",
     navy: "#0a192f",

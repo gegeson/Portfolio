@@ -5,10 +5,10 @@ export default function Top() {
   return (
     <section>
       <div>
-        <h1>Hi, my name is</h1>
+        <h2>Hi, my name is</h2>
       </div>
       <div>
-        <h2 className="big-heading">Yuki Shigemasa.</h2>
+        <h1 className="big-heading">Yuki Shigemasa.</h1>
       </div>
     </section>
   );
