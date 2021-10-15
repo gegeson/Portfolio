@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/About.scss";
 
 export default function About({ data }) {
   return (

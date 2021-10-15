@@ -1,1 +1,15 @@
+#hero {
+  h2 {
+    margin: 0px 0px 30px 4px;
+    color: #7511f6;
+    font-family: var(--font-mono);
+    font-size: clamp(10px, 8vw, 20px);
+    font-weight: 400;
+  }
 
+  .big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    color: #ccd6f6;
+  }
+}

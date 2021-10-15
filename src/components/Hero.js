@@ -3,7 +3,7 @@ import "../css/Hero.scss";
 
 export default function Top() {
   return (
-    <section>
+    <section id="hero">
       <div>
         <h2>Hi, my name is</h2>
       </div>

@@ -1,0 +1,28 @@
+footer {
+  text-align: center;
+
+  .sns-footer {
+    display: none;
+    font-size: 20px;
+    line-height: 1.3;
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+      max-width: 270px;
+      margin: 0 auto 10px;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      a {
+        color: #a8b3d0;
+        padding: 10px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

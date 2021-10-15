@@ -14,7 +14,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
 const card = ({ title, discription, skills, code_url }) => (
-  <Card sx={{ maxWidth: 345 }}>
+  <Card sx={{ maxWidth: 345 }} color="dark">
     <CardMedia
       component="img"
       alt="green iguana"
@@ -46,7 +46,7 @@ const card = ({ title, discription, skills, code_url }) => (
 export default function OutlinedCard() {
   return (
     <section id="products">
-      <h1>
+      <h1 class="numbered-heading">
         <span>03.</span> Products
       </h1>
       <Box sx={{ flexGrow: 1 }}>

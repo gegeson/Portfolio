@@ -3,6 +3,8 @@ import IconGitHub from "./github";
 import IconInstagram from "./instagram";
 import IconLinkedin from "./linkedin";
 import IconTwitter from "./twitter";
+import IconFork from "./fork";
+import IconStar from "./star";
 
 export default function Icon({ name }) {
   switch (name) {
@@ -14,5 +16,9 @@ export default function Icon({ name }) {
       return <IconLinkedin />;
     case "Twitter":
       return <IconTwitter />;
+    case "Fork":
+      return <IconFork />;
+    case "Star":
+      return <IconStar />;
   }
 }
