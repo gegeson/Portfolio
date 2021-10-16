@@ -1,5 +1,6 @@
 #hero {
   font-family: "Roboto";
+  display: flex;
 
   h2 {
     margin: 0px 0px 30px 4px;
@@ -12,5 +13,25 @@
     margin: 0px;
     font-size: clamp(40px, 8vw, 100px);
     color: #ccd6f6;
+  }
+
+  .hand {
+    margin: auto;
+    font-size: clamp(40px, 8vw, 100px);
+    color: #7511f6;
+    transform-origin: left bottom;
+    animation: 1s infinite rotation;
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
   }
 }

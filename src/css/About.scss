@@ -1,35 +1,36 @@
-section {
-  max-width: 900px;
-  .inner {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 50px;
-    @media (max-width: 768px) {
-      display: block;
-    }
-  }
-}
+#about {
+  font-family: "Noto Sans JP";
 
-div {
+  .contents-body {
+    color: #8893af;
+    font-family: "Roboto";
+    font-weight: bold;
+  }
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
+
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+    }
+
     li {
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-family: var(--font-mono);
+      font-family: "Inconsolata";
       font-size: var(--fz-xs);
       &:before {
         content: "▹";
         position: absolute;
+        padding-top: 6px;
         left: 0;
-        color: var(--green);
+        color: #7511f6;
         font-size: var(--fz-sm);
         line-height: 12px;
       }

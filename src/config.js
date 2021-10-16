@@ -42,15 +42,15 @@ module.exports = {
   products: [
     {
       title: "Portfolio",
-      discription: "This is my portforio. ",
+      discription: "This is my portforio.",
       skills: ["Javascript", "React"],
       code_url: "https://github.com/gegeson/Portfolio",
     },
     {
-      title: "Portfolio",
-      discription: "This is my portforio. ",
+      title: "Foodie",
+      discription: "This is my first website. ",
       skills: ["Javascript", "React"],
-      code_url: "https://github.com/gegeson/Portfolio",
+      code_url: "https://github.com/gegeson/Foodie",
     },
     {
       title: "Portfolio",
@@ -70,27 +70,33 @@ module.exports = {
     {
       title: "Birthday!!",
       time: "1998/05/12",
-      skill: "",
     },
     {
       title: "Tomekan hs. in Saga prefecture",
       time: "12014-2017",
-      skill: "",
     },
     {
       title: "Kyushu univ. Department of Architecture",
       time: "2018~",
-      skill: "",
     },
     {
       title: "LINE FUKUOKA Smart City Fukuoka Meetup#5",
       time: "2021/03",
-      skill: "",
     },
     {
       title: "Backend engineer Long-term intern@Oh my teeth",
       time: "2021/03~",
-      skill: ["PHP", "Laravel", "Javascript", "Vue.js"],
     },
+  ],
+
+  skills: [
+    "Python",
+    "Django",
+    "Flask",
+    "PHP",
+    "Laravel",
+    "JavaScript",
+    "Vue.js",
+    "React",
   ],
 };

@@ -44,6 +44,7 @@ footer {
   .footer-info {
     font-size: 18px;
     line-height: 1;
+    font-family: "Inconsolata";
     a {
       padding: 10px;
       text-decoration: none;
@@ -51,15 +52,6 @@ footer {
 
       &:hover {
         color: #7511f6;
-      }
-    }
-
-    .github-stats {
-      margin-top: 10px;
-      & > span {
-        display: inline-flex;
-        align-items: center;
-        margin: 0 7px;
       }
     }
   }

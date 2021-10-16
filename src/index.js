@@ -4,6 +4,7 @@ import "./css/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { StaggeredProps, spring } from "react-motion";
 
 ReactDOM.render(
   <React.StrictMode>

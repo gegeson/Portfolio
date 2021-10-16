@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineWavingHand } from "react-icons/all";
 import "../css/Hero.scss";
 
 export default function Top() {
@@ -9,6 +10,9 @@ export default function Top() {
       </div>
       <div>
         <h1 className="big-heading">Yuki Shigemasa.</h1>
+      </div>
+      <div className="hand">
+        <MdOutlineWavingHand />
       </div>
     </section>
   );

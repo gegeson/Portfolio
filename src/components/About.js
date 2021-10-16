@@ -1,11 +1,12 @@
 import React from "react";
+import { skills } from "../config";
 import "../css/About.scss";
 
 export default function About() {
   return (
     <section id="about">
       <h1 className="numbered-heading">About me</h1>
-      <h2 className="contents-body">Yuki Shigemasa/重政 有希</h2>
+      <h3 className="contents-body">Yuki Shigemasa / 重政 有希</h3>
       <h4 className="contents-body">Student at Kyushu univ.</h4>
       <h4 className="contents-body">Backend engineer</h4>
       <div>
@@ -18,7 +19,13 @@ export default function About() {
           好きなことは、アニメ、バイク、美味しいものを食べること。
         </p>
       </div>
-      <div className="skill"></div>
+      <div className="skill">
+        <ul className="skills-list">
+          {skills.map((skill, i) => (
+            <li key={i}>{skill}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
