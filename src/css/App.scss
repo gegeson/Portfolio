@@ -1,9 +1,13 @@
-$text-color1: white;
-
 .App {
-  // text-align: center;
-  background-color: #0a192e;
+  background-color: hsl(215, 64%, 11%);
   color: white;
+}
+
+main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
 }
 
 section {
@@ -12,14 +16,32 @@ section {
   min-height: 100vh;
   margin: 0px auto;
   padding: 100px 0px;
+
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
   }
 }
 
 .numbered-heading {
-  &:before,
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
+  counter-increment: section;
+  color: #ccd6f6;
+
   &:after {
-    box-sizing: inherit;
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #273957;
   }
 }

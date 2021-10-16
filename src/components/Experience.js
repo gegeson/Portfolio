@@ -1,5 +1,6 @@
 import * as React from "react";
 import { experiences } from "../config";
+import "../css/Experience.scss";
 
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -12,22 +13,23 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 export default function Experience() {
   return (
     <section id="experience">
-      <h1 class="numbered-heading">
-        <span>02.</span> Experience
-      </h1>
+      <h1 className="numbered-heading">Education / Experience</h1>
       <div>
         <React.Fragment>
           <Timeline position="alternate">
-            {experiences.map(({ title, time }, i) => (
+            {experiences.map(({ title, time, skill }, i) => (
               <TimelineItem key={i}>
-                <TimelineOppositeContent color="text.secondary">
+                <TimelineOppositeContent className="time">
                   {time}
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot color="secondary" />
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent>{title}</TimelineContent>
+                <TimelineContent className="content">
+                  <p>{title}</p>
+                  {/* <p>{skill}</p> */}
+                </TimelineContent>
               </TimelineItem>
             ))}
           </Timeline>

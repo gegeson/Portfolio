@@ -68,47 +68,29 @@ module.exports = {
 
   experiences: [
     {
-      title: "生誕！！",
+      title: "Birthday!!",
       time: "1998/05/12",
+      skill: "",
     },
     {
-      title: "私立東明館高等学校（佐賀県）",
+      title: "Tomekan hs. in Saga prefecture",
       time: "12014-2017",
+      skill: "",
     },
     {
-      title: "九州大学 工学部 建築学科",
-      time: "2018",
+      title: "Kyushu univ. Department of Architecture",
+      time: "2018~",
+      skill: "",
     },
     {
-      title: "LINE FUKUOKA Smart City Fukuoka Meetup#5 join!",
+      title: "LINE FUKUOKA Smart City Fukuoka Meetup#5",
       time: "2021/03",
+      skill: "",
     },
     {
-      title:
-        "株式会社Oh my teeth 長期インターン join! PHP, Laravel,Javascript, Vue.js",
-      time: "2021/03-現在",
+      title: "Backend engineer Long-term intern@Oh my teeth",
+      time: "2021/03~",
+      skill: ["PHP", "Laravel", "Javascript", "Vue.js"],
     },
   ],
-
-  colors: {
-    green: "#64ffda",
-    navy: "#0a192f",
-    darkNavy: "#020c1b",
-  },
-
-  srConfig: (delay = 200, viewFactor = 0.25) => ({
-    origin: "bottom",
-    distance: "20px",
-    duration: 500,
-    delay,
-    rotate: { x: 0, y: 0, z: 0 },
-    opacity: 0,
-    scale: 1,
-    easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
-    mobile: true,
-    reset: false,
-    useDelay: "always",
-    viewFactor,
-    viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
-  }),
 };

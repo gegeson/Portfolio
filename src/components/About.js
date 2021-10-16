@@ -1,15 +1,13 @@
 import React from "react";
 import "../css/About.scss";
 
-export default function About({ data }) {
+export default function About() {
   return (
     <section id="about">
-      <h1 class="numbered-heading">
-        <span>01.</span> About Me.
-      </h1>
-      <h2 class="contents-body">Yuki Shigemasa/重政 有希</h2>
-      <h4 class="contents-body">Student at Kyushu univ.</h4>
-      <h4 class="contents-body">Backend engineer</h4>
+      <h1 className="numbered-heading">About me</h1>
+      <h2 className="contents-body">Yuki Shigemasa/重政 有希</h2>
+      <h4 className="contents-body">Student at Kyushu univ.</h4>
+      <h4 className="contents-body">Backend engineer</h4>
       <div>
         <p>
           ものを作ることが好きで建築学科に入りましたが、

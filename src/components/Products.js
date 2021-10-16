@@ -11,15 +11,14 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 
-const card = ({ title, discription, skills, code_url }) => (
-  <Card sx={{ maxWidth: 345 }} color="dark">
+const card = ({ title, discription, skills }) => (
+  <Card sx={{ maxWidth: 345 }} color="dark" className="product-card">
     <CardMedia
       component="img"
       alt="green iguana"
       height="140"
-      image="src/images/リエラ.jpg"
+      src="../../images/liella.jpg"
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
@@ -31,7 +30,7 @@ const card = ({ title, discription, skills, code_url }) => (
       <Typography sx={{ mb: 1.5 }} color="text.secondary">
         <Stack direction="row" spacing={1}>
           {skills.map((skill, i) => (
-            <Chip label={skill} />
+            <Chip key={i} label={skill} />
           ))}
         </Stack>
       </Typography>
@@ -46,9 +45,7 @@ const card = ({ title, discription, skills, code_url }) => (
 export default function OutlinedCard() {
   return (
     <section id="products">
-      <h1 class="numbered-heading">
-        <span>03.</span> Products
-      </h1>
+      <h1 className="numbered-heading">Products</h1>
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
@@ -56,8 +53,8 @@ export default function OutlinedCard() {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {products.map((product, i) => (
-            <Grid item xs={2} sm={4} md={4} key={i}>
-              <Card variant="outlined">{card(product)}</Card>{" "}
+            <Grid item xs={4} sm={4} md={4} key={i}>
+              {card(product)}
             </Grid>
           ))}
         </Grid>

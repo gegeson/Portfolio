@@ -16,10 +16,12 @@ export default function App() {
       <Navigation />
       <Social />
       <Container id="content">
-        <Hero />
-        <About />
-        <Experience />
-        <Products />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Products />
+        </main>
         <Footer />
       </Container>
     </div>
