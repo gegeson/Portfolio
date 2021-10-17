@@ -16,7 +16,7 @@ const card = ({ title, discription, skills, image }) => (
   <Card sx={{ maxWidth: 345 }} color="dark" className="product-card">
     <CardMedia
       component="img"
-      alt="green iguana"
+      alt={title}
       height="140"
       src={"products/images/" + image}
     />
