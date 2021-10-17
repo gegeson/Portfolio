@@ -1,5 +1,6 @@
 import * as React from "react";
 import { products } from "../config";
+import "../css/Products.scss";
 
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
@@ -11,8 +12,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Icon from "./icons/icon";
 
-const card = ({ title, discription, skills, image }) => (
+const card = ({ title, discription, skills, image, code_url, page_link }) => (
   <Card sx={{ maxWidth: 345 }} color="dark" className="product-card">
     <CardMedia
       component="img"
@@ -41,7 +43,9 @@ const card = ({ title, discription, skills, image }) => (
       </Typography>
     </CardContent>
     <CardActions>
-      <Button size="small">Share</Button>
+      <Button href={code_url} className="product-github">
+        <Icon name="GitHub" />
+      </Button>
       <Button size="small">Learn More</Button>
     </CardActions>
   </Card>

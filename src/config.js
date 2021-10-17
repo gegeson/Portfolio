@@ -65,10 +65,10 @@ module.exports = {
       page_link: "",
     },
     {
-      title: "Techcrunch slacker",
+      title: "Techcrunch slackbot",
       discription: "Techcrunchのスタートアップ情報をslackに送信！",
       skills: ["Python", "Flask", "slack API"],
-      image: "portfolio.png",
+      image: "techcrunch_slack.png",
       code_url: "https://github.com/gegeson/techcrunch-slack",
       page_link: "",
     },
