@@ -15,7 +15,12 @@ import Grid from "@mui/material/Grid";
 import Icon from "./icons/icon";
 
 const card = ({ title, discription, skills, image, code_url, page_link }) => (
-  <Card sx={{ maxWidth: 345 }} color="dark" className="product-card">
+  <Card
+    variant="outlined"
+    sx={{ maxWidth: 345 }}
+    color="dark"
+    className="product-card"
+  >
     <CardMedia
       component="img"
       alt={title}
