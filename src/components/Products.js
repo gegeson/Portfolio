@@ -18,7 +18,7 @@ const card = ({ title, discription, skills, image }) => (
       component="img"
       alt={title}
       height="140"
-      src={"products/images/" + image}
+      src={"images/products/" + image}
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
