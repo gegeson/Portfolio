@@ -18,10 +18,10 @@ module.exports = {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/yuki-shigemasa-99b26a1b6/",
     },
-    // {
-    //   name: "Note",
-    //   url: "https://codepen.io/bchiang7",
-    // },
+    {
+      name: "Note",
+      url: "https://note.com/masayuki_shige",
+    },
   ],
 
   navLinks: [
@@ -43,26 +43,44 @@ module.exports = {
     {
       title: "Portfolio",
       discription: "This is my portforio.",
-      skills: ["Javascript", "React"],
+      skills: ["Javascript", "React", "Sass"],
       code_url: "https://github.com/gegeson/Portfolio",
+      page_link: "https://gegeson.github.io/Portfolio/",
     },
     {
       title: "Foodie",
-      discription: "This is my first website. ",
-      skills: ["Javascript", "React"],
+      discription: "This is my first website!!",
+      skills: ["Ruby on Rails"],
       code_url: "https://github.com/gegeson/Foodie",
+      page_link: "http://yourfoodie.herokuapp.com/",
+    },
+    {
+      title: "Weather forecast bot",
+      discription: "日本の六大都市の天気予報を教えてくれるLinbot.",
+      skills: ["Python", "Flask", "Line API"],
+      code_url: "https://github.com/gegeson/Weather_linebot",
+      page_link: "",
+    },
+    {
+      title: "Techcrunch slacker",
+      discription: "Techcrunchのスタートアップ情報をslackに送信！",
+      skills: ["Python", "Flask", "slack API"],
+      code_url: "https://github.com/gegeson/techcrunch-slack",
+      page_link: "",
+    },
+    {
+      title: "Life+Color",
+      discription: "blog site.",
+      skills: ["Javascript", "jquery", "Wordpress", "PHP"],
+      code_url: "",
+      page_link: "https://asuwaga.com/",
     },
     {
       title: "Portfolio",
-      discription: "This is my portforio. ",
-      skills: ["Javascript", "React"],
+      discription: "This is my portforio.",
+      skills: ["Javascript", "React", "Sass"],
       code_url: "https://github.com/gegeson/Portfolio",
-    },
-    {
-      title: "Portfolio",
-      discription: "This is my portforio. ",
-      skills: ["Javascript", "React"],
-      code_url: "https://github.com/gegeson/Portfolio",
+      page_link: "https://gegeson.github.io/Portfolio/",
     },
   ],
 
@@ -96,7 +114,7 @@ module.exports = {
     "PHP",
     "Laravel",
     "JavaScript",
-    "Vue.js",
+    "Vue",
     "React",
   ],
 };

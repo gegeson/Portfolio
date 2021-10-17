@@ -18,16 +18,21 @@ const card = ({ title, discription, skills }) => (
       component="img"
       alt="green iguana"
       height="140"
-      src="../../images/liella.jpg"
+      src="images/liella.jpg"
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
         {title}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography
+        gutterBottom
+        variant="body2"
+        color="text.secondary"
+        component="div"
+      >
         {discription}
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography sx={{ mb: 1.5 }} color="text.secondary" component="div">
         <Stack direction="row" spacing={1}>
           {skills.map((skill, i) => (
             <Chip key={i} label={skill} />

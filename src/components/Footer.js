@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../css/Footer.scss";
 import Icon from "./icons/icon";
 import { socialMedia } from "../config";
