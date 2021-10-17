@@ -17,7 +17,7 @@ import Icon from "./icons/icon";
 
 const card = ({ title, discription, skills, image, code_url, page_link }) => (
   <Card
-    variant="outlined"
+    // variant="outlined"
     sx={{ maxWidth: 345 }}
     color="dark"
     className="product-card"
