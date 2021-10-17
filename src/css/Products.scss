@@ -1,8 +1,13 @@
 .product-card {
-  color: #1e1e1e;
-
-  svg {
-    width: 20px;
-    height: 20px;
+  a {
+    color: #a8b3d0;
+    &:hover,
+    &:focus {
+      color: #7511f6;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

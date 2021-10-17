@@ -12,6 +12,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import LinkIcon from "@mui/icons-material/Link";
 import Icon from "./icons/icon";
 
 const card = ({ title, discription, skills, image, code_url, page_link }) => (
@@ -48,10 +49,21 @@ const card = ({ title, discription, skills, image, code_url, page_link }) => (
       </Typography>
     </CardContent>
     <CardActions>
-      <Button href={code_url} className="product-github">
-        <Icon name="GitHub" />
-      </Button>
-      <Button size="small">Learn More</Button>
+      {code_url ? (
+        <Button href={code_url} className="product-github">
+          <Icon name="GitHub" />
+        </Button>
+      ) : (
+        ""
+      )}
+
+      {page_link ? (
+        <Button href={page_link} className="product-pagelink">
+          <LinkIcon />
+        </Button>
+      ) : (
+        ""
+      )}
     </CardActions>
   </Card>
 );
