@@ -26,7 +26,7 @@ const card = ({ title, discription, skills, image, code_url, page_link }) => (
       component="img"
       alt={title}
       height="140"
-      src={"images/products/" + image}
+      src={`${process.env.PUBLIC_URL}/images/products/${image}`}
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
