@@ -42,7 +42,7 @@ module.exports = {
   products: [
     {
       title: "Portfolio",
-      discription: "This is my portforio.",
+      discription: "This is first React portforio.",
       skills: ["Javascript", "React", "Sass"],
       image: "portfolio.png",
       code_url: "https://github.com/gegeson/Portfolio",
@@ -102,6 +102,10 @@ module.exports = {
     {
       title: "Backend engineer Long-term intern@Oh my teeth",
       time: "2021/03~",
+    },
+    {
+      title: "Backend engineer @CyberAgent inc.",
+      time: "202/03~",
     },
   ],
 
