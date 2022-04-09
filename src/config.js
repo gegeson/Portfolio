@@ -105,7 +105,7 @@ module.exports = {
     },
     {
       title: "Backend engineer @CyberAgent inc.",
-      time: "202/03~",
+      time: "2022/03~",
     },
   ],
 
